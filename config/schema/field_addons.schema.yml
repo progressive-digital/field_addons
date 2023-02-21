@@ -1,0 +1,7 @@
+field.formatter.settings.html_plain_text_wrapper:
+  type: mapping
+  label: 'Plain text HTML tag'
+  mapping:
+    html_tag:
+      type: text
+      label: 'HTML Tag'

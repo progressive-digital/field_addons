@@ -1,0 +1,5 @@
+name: Field Addons
+type: module
+description: 'Additional Field Features.'
+package: Fields
+core_version_requirement: ^9.2 || ^10
