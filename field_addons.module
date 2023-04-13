@@ -1,0 +1,14 @@
+<?php
+
+use Drupal\Core\Block\BlockPluginInterface;
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function field_addons_block_view_alter(array &$build, BlockPluginInterface $block) {
+  // Check if the subject element exists in the block render array.
+  if (isset($build['subject'])) {
+    // Allow HTML tags in the subject.
+    $build['subject']['#allowed_tags'] = ['a', 'code', 'em', 'i', 'strong', 'span', 'br', 'shy' ];
+  }
+}
